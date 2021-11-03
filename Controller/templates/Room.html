@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background-color: #e5edf2;
+}
+
+
+
+a {
+  color: #8f95a4;
+}
+
+.phone {
+  width: 375px;
+  height: 600px;
+  background-color: #f1f8fd;
+  position: relative;
+  border-radius: 40px;
+  margin: 20px auto;
+  box-shadow: 20px 20px 30px 0 rgba(0,0,0,0.1);
+}
+
+
+
+.inner {
+  padding: 40px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0;
+  line-height: 32px;
+  font-size: 16px;
+  color: #222e51;
+}
+
+.cover {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin: 32px 0 40px 0;
+  overflow: hidden;
+  border: 3px solid #f1f8fd;
+  box-shadow:
+    20px 20px 20px rgba(0,0,0,0.07),
+    -20px -20px 20px rgba(255,255,255,0.7),
+    6px 6px 6px rgba(0,0,0,0.09),
+    -6px -6px 6px rgba(255,255,255,0.9);
+}
+
+
+
+.cover img {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.info .song {
+  margin: 0 0 16px 0;
+  line-height: 24px;
+  font-size: 24px;
+  color: #222e51;
+}
+
+.info .artist {
+  margin: 0;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #8f95a4;
+}
+.arrow{
+  background-color: rgb(12, 123, 235);
+}
+
+    </style>
+</head>
+<body>
+    <div class="phone">
+        <div class="inner">
+
+          <div class="cover">
+            <img src="{{song.image_url}}" alt="Sober Up">
+          </div>
+          
+          <div class="info">
+            <h3 class="song">{{song.title}}</h3>
+            <h4 class="artist">{{song.artist}}</h4>
+          </div>
+          
+          <div class="time">
+            <div class="bar"></div>
+          </div>
+          
+          <div class="control">
+            <button class="arrow left" id="prev">
+              <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/arrow_left.svg" alt="Next Music">
+          </button>
+            
+            <button class="play-button">
+ 
+            </button>
+            
+            <button class="arrow right" id="next">
+              <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/arrow_right.svg" alt="Next Music">
+          </button>
+          </div>
+          
+        </div>
+      </div>
+      
+
+      
+</body>
+</html>
